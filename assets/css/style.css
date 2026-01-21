@@ -8,36 +8,165 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  background: #000 fixed;
+  background-attachment: fixed;
+}
+
+/* Extra star layer 2 with different timing */
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(1px 1px at 5% 10%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 18% 35%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 32% 22%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 45% 55%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 58% 42%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 72% 68%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 88% 18%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 92% 85%, #fff, rgba(255, 255, 255, 0));
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  animation: twinkle2 3.2s ease-in-out infinite;
+  animation-delay: 0.5s;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Extra star layer 3 with different timing */
+html::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 8% 42%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 28% 58%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 38% 72%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 62% 15%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 78% 42%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 98% 35%, #fff, rgba(255, 255, 255, 0));
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  animation: twinkle3 2.8s ease-in-out infinite;
+  animation-delay: 1.0s;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   position: relative;
-  background: transparent;
+  background: #000;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
+/* Starfield overlay - Twinkling Stars */
 body::before {
   content: "";
   position: fixed;
-  background: #010e1b;
-  background-size: cover;
-  left: 0;
-  right: 0;
   top: 0;
-  height: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(1px 1px at 10% 15%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 20% 25%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 30% 10%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 40% 35%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 50% 20%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 60% 40%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 70% 15%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 80% 30%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 90% 10%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 15% 50%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 85% 70%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 25% 75%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 5% 5%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 95% 95%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 35% 65%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 75% 45%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 12% 88%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 48% 50%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 68% 78%, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 22% 32%, #fff, rgba(255, 255, 255, 0));
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  animation: twinkle1 2.5s ease-in-out infinite;
+  animation-delay: 0s;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
 }
 
-@media (min-width: 1024px) {
-  body::before {
-    background-attachment: fixed;
-  }
+/* Moving stars overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 5% 5%, #ff6b6b, rgba(255, 107, 107, 0)),
+    radial-gradient(1px 1px at 15% 25%, #8b7355, rgba(139, 115, 85, 0)),
+    radial-gradient(2px 2px at 25% 45%, #f5f5f0, rgba(245, 245, 240, 0)),
+    radial-gradient(1px 1px at 35% 65%, #ff6b6b, rgba(255, 107, 107, 0)),
+    radial-gradient(1.5px 1.5px at 45% 15%, #8b7355, rgba(139, 115, 85, 0)),
+    radial-gradient(1px 1px at 55% 85%, #f5f5f0, rgba(245, 245, 240, 0)),
+    radial-gradient(2px 2px at 65% 35%, #ff6b6b, rgba(255, 107, 107, 0)),
+    radial-gradient(1px 1px at 75% 55%, #8b7355, rgba(139, 115, 85, 0)),
+    radial-gradient(1.5px 1.5px at 85% 25%, #f5f5f0, rgba(245, 245, 240, 0)),
+    radial-gradient(1px 1px at 95% 75%, #ff6b6b, rgba(255, 107, 107, 0));
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  animation: starsMove 20s linear infinite;
+  animation-delay: 1.5s;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+/* Falling Star */
+body > *:first-child::before {
+  content: "";
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  width: 3px;
+  height: 3px;
+  background: #f5f5f0;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #f5f5f0, 0 0 15px rgba(245, 245, 240, 0.8);
+  animation: fallingStar 4s ease-in infinite;
+  pointer-events: none;
+  z-index: 1;
 }
 
 a {
-  color: #12d640;
+  color: #ff6b6b;
 }
 
 a:hover {
-  color: #12d640;
+  color: #8b7355;
   text-decoration: none;
 }
 
@@ -55,7 +184,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   z-index: 997;
-  overflow-y: auto;
+  overflow-y: hidden;
+  background: linear-gradient(135deg, #0a1428 0%, #1a3a52 100%);
 }
 
 #header * {
@@ -80,12 +210,12 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: #12d640;
+  color: #f5f5f0;
 }
 
 #header h2 span {
-  color: #ffc107;
-  border-bottom: 2px solid #1c7d32;
+  color: #ff6b6b;
+  border-bottom: 2px solid #8b7355;
   padding-bottom: 6px;
 }
 
@@ -104,8 +234,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(255, 107, 107, 0.1);
+  color: #f5f5f0;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -114,7 +244,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #1c7d32;
+  background: #ff6b6b;
+  color: #0f172a;
 }
 
 @media (max-width: 992px) {
@@ -182,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #12d640;
+  color: #ff6b6b;
   text-decoration: none;
 }
 
@@ -324,6 +455,22 @@ section.section-show {
   bottom: auto;
   opacity: 1;
   padding-bottom: 0px;
+  overflow: visible !important;
+}
+
+section.section-show::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  right: -100px;
+  background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: nebulaPulse 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
 }
 
 section .container {
@@ -908,7 +1055,7 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #28a745;
+  color: #ffffff;
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
@@ -936,7 +1083,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #12d640;
+  color: #e2e2e2;
 }
 
 .contact .php-email-form {
@@ -1096,3 +1243,943 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+/*--------------------------------------------------------------
+# Modern Futuristic Animations & Effects
+--------------------------------------------------------------*/
+
+/* Animated Background with Gradient Animation */
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f0f23 100%);
+  animation: gradientShift 15s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f0f23 100%);
+  }
+  50% {
+    background: linear-gradient(135deg, #1a1f3a 0%, #0f0f23 50%, #0a0e27 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f0f23 100%);
+  }
+}
+
+/* Floating Particles Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-40px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-20px) translateX(10px);
+  }
+}
+
+/* Glow Effect */
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b, 0 0 50px #ff6b6b;
+  }
+}
+
+/* Galaxy Rotation Animation */
+@keyframes galaxyRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Floating Cosmic Particles Animation */
+@keyframes cosmicFloat {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translateY(-30px) translateX(15px) scale(1.1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-60px) translateX(-20px) scale(0.9);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(-30px) translateX(25px) scale(1.05);
+    opacity: 0.7;
+  }
+}
+
+/* Twinkling Stars Animation */
+@keyframes twinkle1 {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes twinkle2 {
+  0%, 100% {
+    opacity: 0.15;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes twinkle3 {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes twinkle4 {
+  0%, 100% {
+    opacity: 0.25;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+
+/* Moving Stars Animation */
+@keyframes starsMove {
+  0% {
+    transform: translateY(0) translateX(0);
+    background-position: 0 0;
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-40px) translateX(0);
+  }
+  75% {
+    transform: translateY(-20px) translateX(-10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* Falling Star with Curved Path */
+@keyframes fallingStar {
+  0% {
+    top: -100px;
+    left: 50%;
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 55%;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 100vh;
+    left: 35%;
+    opacity: 0;
+  }
+}
+
+/* Cosmic Drift Animation */
+@keyframes cosmicDrift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-30px, 20px) rotate(90deg);
+  }
+  50% {
+    transform: translate(0, 40px) rotate(180deg);
+  }
+  75% {
+    transform: translate(30px, 20px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+/* Nebula Pulse Animation */
+@keyframes nebulaPulse {
+  0%, 100% {
+    opacity: 0.4;
+    filter: blur(20px);
+  }
+  50% {
+    opacity: 0.7;
+    filter: blur(15px);
+  }
+}
+
+/* AI Badge Styling */
+.ai-badge {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff6b6b;
+  text-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+  letter-spacing: 2px;
+  margin-top: 20px;
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Modern Header Enhancement */
+#header {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 998;
+}
+
+#header h1 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #8b7355 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideInDown 0.8s ease-out;
+}
+
+#header h1 a {
+  background: linear-gradient(135deg, #ff6b6b 0%, #8b7355 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+
+#header h2 {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+/* Typing effect enhancement */
+#header .typing {
+  color: #ff6b6b;
+  font-weight: 700;
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Navigation Menu Modern Style */
+.nav-menu ul li a {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(90deg, #ff6b6b 0%, #8b7355 100%);
+  transition: width 0.3s ease;
+}
+
+.nav-menu ul li a:hover:before {
+  width: 100%;
+}
+
+/* Social Links Modern Style */
+#header .social-links a {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0);
+}
+
+#header .social-links a:hover {
+  background: rgba(255, 107, 107, 0.2);
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.6);
+  border-color: #ff6b6b;
+  transform: translateY(-3px);
+}
+
+/* Section Title Modern Style */
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+  background: linear-gradient(90deg, #ff6b6b 0%, #8b7355 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b 0%, #8b7355 100%);
+  bottom: 0;
+  left: 0;
+  animation: expandWidth 0.8s ease-out;
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80px;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Card Hover Effects */
+.icon-box {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon-box:hover {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+  border-color: #0ea5e9;
+  box-shadow: 0 15px 40px rgba(14, 165, 233, 0.2);
+  transform: translateY(-5px);
+}
+
+.icon-box i {
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+.icon-box:hover i {
+  color: #0ea5e9;
+  filter: drop-shadow(0 0 10px #0ea5e9);
+}
+
+/* Portfolio Items Modern Style */
+.portfolio-item {
+  transition: all 0.3s ease;
+}
+
+.portfolio-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.portfolio-wrap:hover {
+  border-color: #0ea5e9;
+  box-shadow: 0 15px 40px rgba(14, 165, 233, 0.3);
+  transform: translateY(-5px);
+}
+
+.portfolio-item h4 {
+  color: #0ea5e9;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  border: none;
+  color: #0f172a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(14, 165, 233, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.5);
+  transform: translateY(-2px);
+  color: #0f172a;
+}
+
+/* Responsive Animations */
+@media (max-width: 768px) {
+  #header h1 {
+    font-size: 36px;
+  }
+  
+  #header h2 {
+    font-size: 20px;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Modern Smooth Animations & Transitions
+--------------------------------------------------------------*/
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Portfolio cards smooth lift on hover */
+.portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+}
+
+/* Icon boxes smooth animation */
+.icon-box {
+  transition: all 0.3s ease;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  background: rgba(14, 165, 233, 0.1);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.1);
+}
+
+/* Section titles smooth animation */
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 100%);
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.section-title h2:hover::after {
+  width: 100%;
+}
+
+/* Smooth nav menu animations */
+.nav-menu li {
+  transition: all 0.3s ease;
+}
+
+.nav-menu li:hover {
+  transform: translateY(-3px);
+}
+
+.nav-menu li a span {
+  position: relative;
+}
+
+.nav-menu li a span::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #0ea5e9;
+  transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover span::after {
+  width: 100%;
+}
+
+/* Smooth image animations */
+.img-fluid {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 8px;
+
+/* Strong overrides for the Skills section to avoid layout/clip conflicts */
+#skills {
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  opacity: 1 !important;
+  z-index: 50 !important;
+  padding-top: 20px !important;
+}
+
+#skills .section-title {
+  position: relative !important;
+  margin-bottom: 12px !important;
+}
+
+#skills .section-title h2 {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 12px 0 !important;
+  letter-spacing: 1px !important;
+  text-transform: none !important;
+  color: #0ea5e9 !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: #0ea5e9 !important;
+  display: inline-block !important;
+}
+
+#skills .section-title h2::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 80px !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 100%) !important;
+  bottom: -6px !important;
+  left: 0 !important;
+  border-radius: 2px !important;
+}
+
+@media (max-width: 768px) {
+  #skills .section-title h2 {
+    font-size: 22px !important;
+  }
+}
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Skills section smooth animation */
+.col-md-12.icon-box {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.col-md-12.icon-box:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.col-md-12.icon-box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.col-md-12.icon-box:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button smooth animations */
+button, a.btn {
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover, a.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
+}
+
+/* Smooth loader animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Contact info boxes smooth animation */
+.info-box {
+  transition: all 0.3s ease;
+  border-left: 3px solid #0ea5e9;
+  padding-left: 20px;
+}
+
+.info-box:hover {
+  border-left-color: #06b6d4;
+  transform: translateX(5px);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Professional looking badges */
+.badge {
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  color: #0f172a;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3);
+}
+
+/* List items smooth animation */
+ul li {
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateX(5px);
+}
+
+/* Professional scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0ea5e9 0%, #06b6d4 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #06b6d4 0%, #0ea5e9 100%);
+}
+
+/*--------------------------------------------------------------
+# Education & Certification Cards
+--------------------------------------------------------------*/
+
+.education-card {
+  background: rgba(14, 165, 233, 0.05);
+  border-left: 3px solid #0ea5e9;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.education-card:hover {
+  background: rgba(14, 165, 233, 0.1);
+  border-left-color: #06b6d4;
+  transform: translateX(5px);
+}
+
+.education-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.education-card ul li {
+  padding: 8px 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(14, 165, 233, 0.2);
+  transition: all 0.3s ease;
+}
+
+.education-card ul li:last-child {
+  border-bottom: none;
+}
+
+.education-card ul li::before {
+  content: '▸ ';
+  color: #0ea5e9;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.education-card ul li:hover {
+  color: #0ea5e9;
+  padding-left: 10px;
+}
+
+.cert-box {
+  background: rgba(6, 182, 212, 0.05);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cert-box:hover {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: #0ea5e9;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.2);
+}
+
+.cert-link {
+  color: #06b6d4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cert-link:hover {
+  color: #0ea5e9;
+  transform: translateX(5px);
+}
+
+.mb-4 {
+  margin-bottom: 30px;
+}
+
+
+/* Force clear, readable Skills heading style */
+#skills .section-title h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0ea5e9; /* fallback visible color */
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: none;
+}
+
+#skills .section-title h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 100%);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+/* Strong overrides to ensure Skills heading is always readable across tabs */
+#skills .section-title h2 {
+  color: #0ea5e9 !important;
+  -webkit-text-fill-color: #0ea5e9 !important;
+  background: none !important;
+  background-clip: initial !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: #0ea5e9 !important;
+  display: block !important;
+  font-size: 32px !important;
+  line-height: 1.1 !important;
+  margin: 0 0 12px !important;
+  text-transform: none !important;
+  z-index: 3 !important;
+  -webkit-text-stroke: 0px transparent !important;
+}
+
+#skills .section-title h2::after {
+  position: relative !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 80px !important;
+  height: 4px !important;
+  margin-top: 6px !important;
+}
+
+@media (max-width: 992px) {
+  #skills .section-title h2 {
+    font-size: 26px !important;
+  }
+  #skills .section-title h2::after {
+    width: 60px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #skills .section-title h2 {
+    font-size: 22px !important;
+  }
+  #skills .section-title h2::after {
+    width: 48px !important;
+  }
+}
+
+/* ===================================================================
+   FINAL CRITICAL OVERRIDES: Fix all section headings clipping.
+   These rules ensure section overflow is visible and headings
+   display correctly across ALL tabs (About, Expertise, Education,
+   Experience, Projects, Contact, Skills).
+   =================================================================== */
+
+section {
+  overflow: visible !important;
+}
+
+section.section-show {
+  overflow: visible !important;
+}
+
+section .container {
+  overflow: visible !important;
+}
+
+.section-title {
+  position: relative !important;
+  z-index: 30 !important;
+  overflow: visible !important;
+  padding-bottom: 20px !important;
+}
+
+.section-title h2 {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  letter-spacing: 1px !important;
+  text-transform: none !important;
+  color: #0ea5e9 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #0ea5e9 !important;
+  display: block !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.section-title h2::after {
+  content: '' !important;
+  display: block !important;
+  width: 80px !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 100%) !important;
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+  border-radius: 2px !important;
+  position: relative !important;
+}
+
+@media (max-width: 992px) {
+  .section-title h2 {
+    font-size: 24px !important;
+  }
+  .section-title h2::after {
+    width: 60px !important;
+    height: 3px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title h2 {
+    font-size: 20px !important;
+  }
+  .section-title h2::after {
+    width: 48px !important;
+    height: 3px !important;
+  }
+}
+
