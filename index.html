@@ -1,693 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png"/>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Muhammad Arham Khhan</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-169007209-3');
-  </script>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Arham Khan — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Syne:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
 
-    <div class="container">
-      <h1><a href="index.html">Muhammad Arham Khan</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#ff6b6b"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-<!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="https://bit.ly/Muhammad-Arham-Kha" target="_blank"> <span>Resume</span></a></li>
-          <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
-          <li><a href="#contacts"> <span>Contact</span></a></li>
+  <!-- Animated Background -->
+  <div class="bg-canvas">
+    <canvas id="starfield"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
 
-        </ul>
-      </nav><!-- .nav-menu -->
+  <!-- Scroll Spy Navigation -->
+  <div class="scroll-spy">
+    <a href="#hero" class="spy-dot active" title="Start"></a>
+    <a href="#about" class="spy-dot" title="About"></a>
+    <a href="#strengths" class="spy-dot" title="Strengths"></a>
+    <a href="#skills" class="spy-dot" title="Skills"></a>
+    <a href="#experience" class="spy-dot" title="Experience"></a>
+    <a href="#projects" class="spy-dot" title="Projects"></a>
+    <a href="#contact" class="spy-dot" title="Contact"></a>
+  </div>
 
-      <div class="social-links">
-          <a href="https://www.linkedin.com/in/arham-khan-846424266/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/httparham" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:http.arham@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
-      </div>
-
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>MAK<span class="logo-bracket">/&gt;</span>
     </div>
-  </header><!-- End Header -->
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#strengths" class="nav-link">Strengths</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#strengths" class="nav-link">Strengths</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Available for Opportunities
       </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/profile.jpeg" class="img-fluid" alt="">
+      <h1 class="hero-name">
+        <span class="name-line" data-text="Muhammad">Muhammad</span>
+        <span class="name-line accent" data-text="Arham Khan">Arham Khan</span>
+      </h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-static">Full Stack </span>
+        <span class="hero-title-cycle" id="title-cycle">Developer</span>
+      </div>
+      <p class="hero-desc">
+        Full Stack Developer with <em>2+ years</em> of experience building scalable web apps using <em>Python & React</em>. Specializing in API development, automation, and AI-powered solutions.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="Arham CV.pdf" download class="btn btn-ghost">
+          <span>Download CV</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>+
+          <span class="stat-label">Years Exp.</span>
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>Innovative Full Stack Developer and Software Engineer with expertise in Python, web development, and artificial intelligence. I build scalable solutions and automate complex tasks with a strong foundation in backend programming, database management, and DevOps. Passionate about leveraging technology to solve real-world problems and creating impactful digital solutions.
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span>+
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="20">0</span>+
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring-1">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="orbit-ring ring-2">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="orbit-ring ring-3">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="center-avatar">
+        <div class="avatar-inner">MAK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">// 01 — ABOUT</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Full Stack Developer based in <strong>Islamabad, Pakistan</strong>, with 2+ years of hands-on experience building scalable web applications using Python (Django, FastAPI) and React. Strong focus on performance, real-world problem solving, and automation.
           </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 11 July 2001</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +92 331 5868638</li>
-              </ul>
+          <p>
+            Currently serving as <strong>Associate Software Engineer at Camden Health System</strong>, architecting Django APIs that power 100+ hospitals with a 30% performance improvement.
+          </p>
+          <p>
+            Skilled in API development, real-time applications, AI-based solutions, and system design. I hold a B.Sc. in Computer Science from CUST (2020–2024), specializing in AI, web systems, and cybersecurity.
+          </p>
+          <div class="highlights-list">
+            <div class="highlight-item"><span class="hl-dot"></span>Developed & optimized APIs serving 100+ hospitals</div>
+            <div class="highlight-item"><span class="hl-dot"></span>30% system performance improvement via backend optimization</div>
+            <div class="highlight-item"><span class="hl-dot"></span>Built scalable and secure authentication systems</div>
+            <div class="highlight-item"><span class="hl-dot"></span>Strong in real-time apps, system design & automation</div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-icon">🎓</div>
+            <div>
+              <div class="info-title">Education</div>
+              <div class="info-val">B.Sc. Computer Science</div>
+              <div class="info-sub">CUST, 2020–2024</div>
             </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Islamabad</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> http.arham@gmail.com</li>
-              </ul>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <div class="info-title">Location</div>
+              <div class="info-val">Islamabad, Pakistan</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">⚡</div>
+            <div>
+              <div class="info-title">Specialty</div>
+              <div class="info-val">Full Stack + AI</div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Expertise & Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-global-line" style="color: #ff6b6b;"></i>
-            <h3>Python Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #ff6b6b;"></i>
-            <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-brain-line" style="color: #ff6b6b;"></i>
-            <h3>Deep Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-chat-1-line" style="color: #ff6b6b;"></i>
-            <h3>NLP & AI</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-code-s-slash-fill" style="color: #ff6b6b;"></i>
-            <h3>Backend Engineering</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #ff6b6b;"></i>
-            <h3>Data Analysis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #ff6b6b;"></i>
-            <h3>Algorithms</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-image-line" style="color: #ff6b6b;"></i>
-            <h3>Full Stack Development</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-
-
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
+  <!-- Strengths Section -->
+  <section class="section" id="strengths">
     <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
+      <div class="section-label">// 02 — STRENGTHS</div>
+      <h2 class="section-title">Core Engineering Capabilities</h2>
+      <div class="strengths-grid">
+        
+        <div class="strength-card">
+          <div class="strength-icon">🏗️</div>
+          <h3>End-to-End System Design</h3>
+          <p>Architecting scalable solutions from scratch, handling everything from database schema design to frontend deployment.</p>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-icon">⚡</div>
+          <h3>Performance Optimization</h3>
+          <p>Tuning APIs and database queries to handle large scale deployments, recently achieving a 30% performance boost for medical systems.</p>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-icon">🚀</div>
+          <h3>DevOps & Infrastructure</h3>
+          <p>Containerizing applications with Docker, managing Linux servers, and deploying CI/CD workflows on Heroku, Netlify, and custom servers.</p>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-icon">🔐</div>
+          <h3>Secure & Real-Time Sync</h3>
+          <p>Implementing battle-tested authentication (JWT, Supabase) and bidirectional real-time communications using WebRTC and Socket.IO.</p>
+        </div>
+
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="education-card">
-            <img src="assets/img/education/ASU.jpg" class="img-fluid" alt="CUST" style="border-radius: 8px; margin-bottom: 15px;">
-            <p style="color:#ff6b6b; font-weight: 600; font-size: 16px;">BS in Computer Science</p>
-            <h5 style="margin: 10px 0;">Capital University of Science and Technology</h5>
-            <p style="color: #ff6b6b; margin-bottom: 15px;">2020 - 2024</p>
-            <h6 style="color:#fff; margin-bottom: 10px;">Specializations & Coursework</h6>
-            <ul>
-              <li>Web Development</li>
-              <li>Artificial Intelligence</li>
-              <li>Cybersecurity</li>
-              <li>Data Structures & Algorithms</li>
-              <li>Database Systems</li>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-label">// 03 — SKILLS</div>
+      <h2 class="section-title">Tech Arsenal</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">{ }</span>
+            <span class="skill-category">Languages</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-category">Backend</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Django</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🎨</span>
+            <span class="skill-category">Frontend</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">Angular</span>
+            <span class="tag">Nuxt.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🗄️</span>
+            <span class="skill-category">Databases</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Supabase</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🐳</span>
+            <span class="skill-category">DevOps & Tools</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">NGINX</span>
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Heroku</span>
+            <span class="tag">Netlify</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">📡</span>
+            <span class="skill-category">Real-Time & Messaging</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">WebRTC</span>
+            <span class="tag">Socket.IO</span>
+            <span class="tag">RabbitMQ</span>
+            <span class="tag">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🤖</span>
+            <span class="skill-category">AI / ML</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">OpenAI APIs</span>
+            <span class="tag">NLP</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Sentiment Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🕷️</span>
+            <span class="skill-category">Automation & Scraping</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Selenium</span>
+            <span class="tag">Chrome Extensions</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">SMTP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label">// 04 — EXPERIENCE</div>
+      <h2 class="section-title">Career Timeline</h2>
+      <div class="timeline">
+
+        <div class="timeline-item active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <div class="tl-role">Associate Software Engineer</div>
+                <div class="tl-company">Camden Health System (Pvt) Ltd</div>
+              </div>
+              <div class="tl-date">Mar 2025 — Present</div>
+            </div>
+            <ul class="tl-points">
+              <li>Built and optimized Django APIs serving <strong>100+ hospitals</strong>, improving response time by 30%</li>
+              <li>Built full-stack video calling platform with WebRTC, Socket.IO, and React</li>
+              <li>Developed scalable Gmail/Zoho-like email platform with Django, PostgreSQL, MongoDB</li>
+              <li>Integrated Supabase backend and custom features for production apps</li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="education-card">
-            <img src="assets/img/education/au.png" class="img-fluid" alt="School" style="border-radius: 8px; margin-bottom: 15px;">
-            <p style="color:#ff6b6b; font-weight: 600; font-size: 16px;">Intermediate in Pre-Engineering</p>
-            <h5 style="margin: 10px 0;">Bahria College</h5>
-            <p style="color: #ff6b6b; margin-bottom: 15px;">2018 - 2020</p>
-            <h6 style="color:#fff; margin-bottom: 10px;">Relevant Subjects</h6>
-            <ul>
-              <li>Mathematics</li>
-              <li>Physics</li>
-              <li>Chemistry</li>
-              <li>English</li>
-              <li>Computer Science</li>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <div class="tl-role">Python Developer</div>
+                <div class="tl-company">GoldBarTech Pvt Ltd</div>
+              </div>
+              <div class="tl-date">Jul 2024 — Mar 2025</div>
+            </div>
+            <ul class="tl-points">
+              <li>Built Amazon auto web scraper running every 12 hours for product data collection</li>
+              <li>Created AI model for big data classification and processing</li>
+              <li>Designed SMTP email tool for automated bulk email communication</li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Education Section -->
 
-  <!-- ======= Certifications Section ======= -->
-  <section id="certifications" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Professional Certifications</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="cert-box">
-            <h5 style="color: #ff6b6b; margin-bottom: 10px;">Machine Learning</h5>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/2BTJ636Q2E93" target="_blank" class="cert-link">View Certificate →</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="cert-box">
-            <h5 style="color: #ff6b6b; margin-bottom: 10px;">Algorithms - Design and Analysis</h5>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/6THRQXYE9EHZ" target="_blank" class="cert-link">View Certificate →</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="cert-box">
-            <h5 style="color: #ff6b6b; margin-bottom: 10px;">Algorithmic Toolbox</h5>
-            <a href="https://coursera.org/share/98bbfb990484fac370d5e5ed14334ea4" target="_blank" class="cert-link">View Certificate →</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="cert-box">
-            <h5 style="color: #ff6b6b; margin-bottom: 10px;">Deep Learning with TensorFlow</h5>
-            <a href="https://drive.google.com/file/d/1FSwPt19EzY_tpvqkE6igtLf3gccKcssC/view" target="_blank" class="cert-link">View Certificate →</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="cert-box">
-            <h5 style="color: #ff6b6b; margin-bottom: 10px;">Machine Learning with Python</h5>
-            <a href="https://drive.google.com/file/d/1gimySw_NPzCJ54dqZ2j2wYyz-JDOg-S0/view" target="_blank" class="cert-link">View Certificate →</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="cert-box">
-            <h5 style="color: #ff6b6b; margin-bottom: 10px;">Neural Networks and Deep Learning</h5>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/ELXZ6FE2BU7X" target="_blank" class="cert-link">View Certificate →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Certifications Section -->
-
-
-
-  <!-- Start Experience Section -->
-
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://camdenhealthsys.com/" style="color:#ffffff">Camden Health System (Pvt) Ltd</a><br> </h4>
-                <h5 style="text-align:left;">March 2025 - Present</h5>
-                <p style="text-align:left;color:#fff"><em>Associate Software Engineer</em></p>
-                <ul style="text-align:left;">
-                  <li>Built and optimized Django APIs serving 100+ hospitals, improving response time by 30%</li>
-                  <li>Developed a full-stack video calling platform with WebRTC, Socket.IO, and React</li>
-                  <li>Built a scalable Gmail/Zoho-like email platform with Django, PostgreSQL, and MongoDB</li>
-                  <li>Participating in code reviews, debugging, and optimizing applications for maximum performance</li>
-                </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <div class="tl-role">Intern — Full Stack Developer</div>
+                <div class="tl-company">Eziline Software House</div>
               </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.goldbartechpk.com/" style="color:#ffffff">GoldBarTech Pvt Ltd</a><br> </h4>
-                <h5 style="text-align:left;">July 2024 - March 2025</h5>
-                <p style="text-align:left;color:#fff"><em>Python Developer</em></p>
-                <ul style="text-align:left;">
-                  <li>Developed an Amazon auto web scraper to automate product data collection every 12 hours</li>
-                  <li>Created an AI model for big data classification, improving data processing and analysis</li>
-                  <li>Designed an SMTP email tool, streamlining automated bulk email communication</li>
-                </ul>
-              </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://maktraders.enic.pk/" style="color:#ffffff">MAK TRADERS ISB</a><br> </h4>
-                <h5 style="text-align:left;">July 2021 - November 2021</h5>
-                <p style="text-align:left;color:#fff"><em>Web Developer</em></p>
-                <ul style="text-align:left;">
-                  <li>Developed and maintained dynamic websites for multiple small businesses</li>
-                  <li>Integrated e-commerce solutions for small businesses, enabling online transactions</li>
-                  <li>Provided technical support and troubleshooting for clients</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.scienceskillsacademy.co.uk/" style="color:#ffffff">Skills Science College</a><br> </h4>
-                <h5 style="text-align:left;">July 2022 - March 2023</h5>
-                <p style="text-align:left;color:#fff"><em>Teacher</em></p>
-                <ul style="text-align:left;">
-                  <li>Taught computer science courses to high school students focusing on web development and programming</li>
-                  <li>Improved classroom engagement through interactive teaching methods and real-world problem-solving</li>
-                  <li>Organized workshops and seminars introducing students to AI and machine learning</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.eziline.com/" style="color:#ffffff">Eziline Software House</a><br> </h4>
-                <h5 style="text-align:left;">July 2023 - September 2023</h5>
-                <p style="text-align:left;color:#fff"><em>Intern</em></p>
-                <ul style="text-align:left;">
-                  <li>Improved website development skills using Angular and Nuxt.js platforms.</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://arcticsolutions.cn/" target="_blank" style="color:#ffffff">Arctic Solutions Ltd.</a><br> </h4>
-                <h5 style="text-align:left;">March 2023 - April 2023</h5>
-                <p style="text-align:left;color:#fff"><em>Web Developer</em></p>
-                <ul style="text-align:left;">
-                  <li>Led development of advanced automation system achieving 15% increase in operational efficiency</li>
-                  <li>Developed dynamic websites for small businesses enhancing online presence and user experience</li>
-                  <li>Designed responsive and interactive features boosting user engagement</li>
-                </ul>
-              </div>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- End Experience Section -->
-
-
-
-  <!-- Start Project Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web-App</li>
-            <li data-filter=".filter-project">Project</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Sentiment Analysis</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/twitteranalysis.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/twitteranalysis.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+              <div class="tl-date">Jul 2023 — Sep 2023</div>
             </div>
+            <ul class="tl-points">
+              <li>Built client websites using Angular and Nuxt.js</li>
+              <li>Collaborated on backend optimization and database query improvements</li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Application Development</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/iras.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <div class="tl-role">Web Developer</div>
+                <div class="tl-company">Arctic Solution Ltd</div>
               </div>
+              <div class="tl-date">Mar 2023 — Apr 2023</div>
             </div>
+            <ul class="tl-points">
+              <li>Led automation system development achieving 15% increase in operational efficiency</li>
+              <li>Developed dynamic websites for small businesses</li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>OOPs Managment project</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/musicplayer.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Movie Recommender</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/recommender.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <!-- <br> -->
-          <center><h4>AI Models</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>AI Models</h4>
-              <div class="portfolio-links">
-                <a href="projects/resume.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <br>
-          <center><h4>Tech Blog</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/blog.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/blog.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Online Stores for small businesses</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/vdg.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>ML-DL Web-App</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/ml.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Video Calling Platform</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/videocalling.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4 style="color: #ff6b6b; text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">Email Management System</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/blog.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/emailmanagement.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4 style="color: #ff6b6b; text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">Therapy Platform</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/therapyplatform.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4 style="color: #ff6b6b; text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">Email Platform (Zoho-like)</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/emailplatform.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- End Project Section -->
-
-
-
-  <!-- Start Skills Section -->
-
-  <section id="skills" class="services">
+  <!-- Projects Section -->
+  <section class="section section-dark" id="projects">
     <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 204, 255, 0.1) 100%); border: 1px solid rgba(0, 255, 136, 0.3); border-radius: 10px;">
-            <h4 style="text-align:left;color:#ff6b6b; text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">🐍 Languages & Databases</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="vectorlogo.zone" height="50" width="150">
-                  <img src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg" alt="vectorlogo.zone" height="50" width="140">
-                  <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg" alt="vectorlogo.zone" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone" height="50" width="190">
-                  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="vectorlogo.zone" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
-                </p>
-            </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 204, 255, 0.1) 100%); border: 1px solid rgba(0, 255, 136, 0.3); border-radius: 10px;">
-              <h4 style="text-align:left;color:#ff6b6b; text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">⚙️ Backend & AI/ML Frameworks</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="upload.wikimedia.org" width="90" height="70">
-              </p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 204, 255, 0.1) 100%); border: 1px solid rgba(0, 255, 136, 0.3); border-radius: 10px;">
-              <h4 style="text-align:left;color:#ff6b6b; text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">🚀 DevOps & Tools</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="vectorlogo.zone" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/nginx/nginx-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone" height="50" width="190">
-                  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="vectorlogo.zone">
-              </p>
+      <div class="section-label">// 05 — PROJECTS</div>
+      <h2 class="section-title">Key Builds</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-tag">AI + Backend</div>
+          <h3>AI-Powered Email Management System</h3>
+          <p>Scalable email platform using Django, PostgreSQL, MongoDB, and OpenAI. Implemented AI-based email classification, multi-tenant architecture, and secure authentication with external mail server integration.</p>
+          <div class="project-stack">
+            <span>Django</span><span>OpenAI</span><span>PostgreSQL</span><span>MongoDB</span>
           </div>
         </div>
+
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-tag">Healthcare · Real-Time</div>
+          <h3>Full Stack Video Calling Platform</h3>
+          <p>Real-time video calling application using React, WebRTC, and Socket.IO. Implemented peer-to-peer communication, multi-user rooms, screen sharing, and a fully responsive UI. Dockerized for therapy use.</p>
+          <div class="project-stack">
+            <span>WebRTC</span><span>React</span><span>Socket.IO</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Healthcare · ERP</div>
+          <h3>Medical Store Management System</h3>
+          <p>Full-stack system using Django REST Framework and Angular. Features inventory management, billing, role-based access control, monthly sales analytics, and reporting dashboards.</p>
+          <div class="project-stack">
+            <span>Django REST</span><span>Angular</span><span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Infrastructure</div>
+          <h3>PMTA Server Management Agent</h3>
+          <p>Flask-based automation system for managing email servers. Automated DKIM/SPF setup, domain management, file management, and centralized control of distributed servers.</p>
+          <div class="project-stack">
+            <span>Flask</span><span>Python</span><span>SMTP</span><span>Linux</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">E-commerce · Automation</div>
+          <h3>Amazon E-commerce Data Suite</h3>
+          <p>Automated scraping tools using Python and Selenium running every 12 hours, paired with Chrome extensions for AWS USA/UK with one-click real-time product data extraction into Google Sheets.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Selenium</span><span>JavaScript</span><span>Google Sheets API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">AI · Conversational</div>
+          <h3>Conversational AI Platform — Sages</h3>
+          <p>Django-based chatbot platform using OpenAI APIs for human-like text and voice responses. Designed for interactive, context-aware conversational experiences.</p>
+          <div class="project-stack">
+            <span>Django</span><span>OpenAI</span><span>NLP</span>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-tag">AI · NLP</div>
+          <h3>Sentiment Analysis System (NLP)</h3>
+          <p>Final Year Project focused on contextual sentiment analysis using Machine Learning and Natural Language Processing techniques to classify text datasets accurately.</p>
+          <div class="project-stack">
+            <span>Python</span><span>NLP</span><span>Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">AI · Vision</div>
+          <h3>CCTV Recognition System</h3>
+          <p>Real-time face recognition system using Python and OpenCV for identity detection from live CCTV video feeds. Built for surveillance and security analytics.</p>
+          <div class="project-stack">
+            <span>Python</span><span>OpenCV</span><span>ML</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Full Stack · Client Work</div>
+          <h3>Production Client Solutions</h3>
+          <p>Engineered and deployed multiple real-world client applications (Arctic Solution, Eziline, Mak Traders). Migrated legacy backends to Supabase and fixed production workflows for Lovable built apps.</p>
+          <div class="project-stack">
+            <span>Supabase</span><span>Angular</span><span>Netlify</span><span>React</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- End Skills Section -->
-
-
-
-
-  <!-- Start Links section -->
-  <section id="links" class="services">
+  <!-- Contact Section -->
+  <section class="section" id="contact">
     <div class="container">
-      <div class="section-title">
-        <h2>Resume & Links</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank">Resume</a></h4>
-          <p class="description" style="color:#fff;">The link contains downloadable resume</p>
+      <div class="section-label">// 06 — CONTACT</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-wrap">
+        <p class="contact-sub">Have a project in mind or want to collaborate? Drop me a message.</p>
+        <div class="contact-links">
+
+          <a href="/cdn-cgi/l/email-protection#5c3428282c723d2e343d311c3b313d3530723f3331" class="contact-card">
+            <div class="contact-card-icon email-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value"><span class="__cf_email__" data-cfemail="48203c3c3866293a202925082f25292124662b2725">http.arham@gmail.com</span></span>
+            </div>
+            <div class="contact-card-arrow">→</div>
+          </a>
+
+          <a href="tel:+923315868638" class="contact-card">
+            <div class="contact-card-icon phone-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value phone-value">+92 331 5868638</span>
+            </div>
+            <div class="contact-card-arrow">→</div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/arhamist" target="_blank" class="contact-card">
+            <div class="contact-card-icon linkedin-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">linkedin.com/in/arhamist</span>
+            </div>
+            <div class="contact-card-arrow">→</div>
+          </a>
+
         </div>
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
-          <a href="https://github.com/rajaprerak/LeetCode_Problems" target="_blank"><div class="icon"><i class="icofont-link"></i></div></a>
-          <h4 class="title"><a href="https://github.com/rajaprerak/LeetCode_Problems" target="_blank">LeetCode Repository</a></h4>
-          <p class="description" style="color:#fff;"> The github repository contains leetcode problems solution in python.</p>
-        </div>
-        <!-- <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://techingenious.herokuapp.com/" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://techingenious.herokuapp.com/" target="_blank">Blog</a></h4>
-          <p class="description" style="color:#fff;">Blog containing articles on AI, coding, development</p>
-        </div> -->
+        <a href="/cdn-cgi/l/email-protection#472f3333376926352f262a07202a262e2b6924282a" class="btn btn-primary btn-large">
+          <span>Send Message</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        </a>
       </div>
     </div>
-  </section> <!--End Links Section -->
-
-
-  <!-- Start Contact Section -->
-
-  <section id="contacts" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Korang Town </p>
-            <p>Islamabad</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/arham-khan-846424266/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://github.com/httparham" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:http.arham@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <p>http.arham@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Contact</h3>
-            <p>+92 331 5868638</p>
-          </div>
-        </div>
-      </div>
-     </div>
   </section>
 
-  <!-- End Contact Section -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo-bracket">&lt;</span>MAK<span class="logo-bracket">/&gt;</span>
+      <div class="footer-text">&copy; 2026 Muhammad Arham Khan. All rights reserved.</div>
+    </div>
+  </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Full Stack Developer", "Backend Engineer", "Software Engineer", "AI/ML Enthusiast"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
