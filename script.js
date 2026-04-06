@@ -448,12 +448,12 @@
 (function () {
   if (typeof Lenis !== 'undefined') {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.4,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
       direction: 'vertical',
       gestureDirection: 'vertical',
-      smooth: false,
-      mouseMultiplier: 1,
+      smooth: true,
+      mouseMultiplier: 1.1,
       smoothTouch: false,
       touchMultiplier: 2,
     });
@@ -474,6 +474,41 @@
           lenis.scrollTo(target);
         }
       });
+    });
+
+    // Soft-Snap to Sections
+    let isScrollingToSection = false;
+    let snapTimeout;
+
+    const sections = document.querySelectorAll('section[id]');
+    
+    lenis.on('scroll', () => {
+      clearTimeout(snapTimeout);
+      
+      // If we aren't already in a programmatic scroll, set a timer to snap to the nearest section
+      if (!isScrollingToSection) {
+        snapTimeout = setTimeout(() => {
+          let closest = null;
+          let minDistance = Infinity;
+
+          sections.forEach(section => {
+            const distance = Math.abs(window.scrollY - section.offsetTop);
+            if (distance < minDistance && distance < window.innerHeight / 2) {
+              minDistance = distance;
+              closest = section;
+            }
+          });
+
+          if (closest && minDistance > 20) { // Only snap if we aren't already very close
+            isScrollingToSection = true;
+            lenis.scrollTo(closest, {
+              onComplete: () => {
+                isScrollingToSection = false;
+              }
+            });
+          }
+        }, 150); // Small wait after scroll stops to feel intentional
+      }
     });
   }
 })();

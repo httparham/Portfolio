@@ -34,9 +34,7 @@ html.lenis body {
   height: auto;
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
+
 
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
@@ -466,8 +464,6 @@ img {
     url('background.jpeg');
   background-size: cover;
   background-position: center;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .hero-content {
@@ -758,8 +754,6 @@ img {
   position: relative;
   z-index: 1;
   padding: 7rem clamp(1.5rem, 8vw, 6rem);
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 @media (min-width: 901px) {
@@ -1081,7 +1075,7 @@ img {
 @media (min-width: 901px) {
   .timeline {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     padding-left: 0;
   }
@@ -1105,6 +1099,19 @@ img {
 .timeline-card:hover {
   border-color: var(--border-hover);
   transform: translateX(6px);
+}
+
+@media (min-width: 901px) {
+  .timeline-card {
+    padding: 1.2rem;
+  }
+  .tl-header {
+    margin-bottom: 0.6rem;
+  }
+  .tl-points li {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
 }
 
 .tl-header {
