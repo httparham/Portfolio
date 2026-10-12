@@ -3,357 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Aavish Khan — Software Engineer</title>
-    <meta name="description" content="Software engineer and full-stack developer in Islamabad. Python, Django, FastAPI, React, and AI-powered systems.">
-    <meta name="author" content="Muhammad Aavish Khan">
-    <meta name="theme-color" content="#0c0b0a">
-    <meta property="og:title" content="Muhammad Aavish Khan — Software Engineer">
-    <meta property="og:description" content="Full-stack engineer specializing in scalable web systems, APIs, and AI-powered products.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Muhammad Aavish Khan — Software Engineer">
-    <meta name="twitter:description" content="Full-stack engineer specializing in scalable web systems, APIs, and AI-powered products.">
+    <title>Muhammad Arham Khan — Full Stack Python Developer</title>
+    <meta name="description" content="Full Stack Python Developer and AI Applications Engineer. Django, FastAPI, PostgreSQL, healthcare and education platforms.">
+    <meta name="theme-color" content="#0b080c">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <script>
-        (function () {
-            try {
-                var queryTheme = new URLSearchParams(window.location.search).get('theme');
-                var saved = (queryTheme === 'light' || queryTheme === 'dark')
-                    ? queryTheme
-                    : localStorage.getItem('theme');
-                var theme = saved === 'light' || saved === 'dark'
-                    ? saved
-                    : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-                document.documentElement.setAttribute('data-theme', theme);
-            } catch (e) {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        })();
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Muhammad Aavish Khan",
-        "jobTitle": "Software Engineer",
-        "email": "mailto:aavish.khan786@gmail.com",
-        "telephone": "+923028989268",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Islamabad",
-            "addressCountry": "PK"
-        },
-        "url": "https://linkedin.com/in/aavishkhan",
-        "sameAs": ["https://linkedin.com/in/aavishkhan"],
-        "knowsAbout": ["Python", "Django", "FastAPI", "React", "Software Quality Assurance", "Full-stack development"]
-    }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
+    <div class="loader" id="loader">
+        <p class="loader-name">Arham Khan</p>
+        <p class="loader-count" id="loader-count">0%</p>
+        <p class="loader-hint">Welcome</p>
+    </div>
+
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+    <div class="nav-fade" aria-hidden="true"></div>
+
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" id="site-header">
-        <div class="header-inner">
-            <a class="wordmark" href="#top" aria-label="Muhammad Aavish Khan, home">
-                <span class="wordmark-mark" aria-hidden="true">AK</span>
-                <span class="wordmark-name">Aavish Khan</span>
-            </a>
-
-            <nav class="nav" id="site-nav" aria-label="Primary">
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a class="nav-cta" href="mailto:aavish.khan786@gmail.com">Email</a>
-            </nav>
-
-            <div class="header-actions">
-                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
-                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
-                        <path d="M12 3v1.5M12 19.5V21M4.93 4.93l1.06 1.06M18.01 18.01l1.06 1.06M3 12h1.5M19.5 12H21M4.93 19.07l1.06-1.06M18.01 5.99l1.06-1.06" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M18.5 13.2A7.2 7.2 0 1 1 10.8 5.5 5.6 5.6 0 0 0 18.5 13.2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
+    <header class="site-header">
+        <a class="logo" href="#top">AK</a>
+        <nav id="site-nav">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#career">Career</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="header-mail" href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">github.com/httparham</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span>
+        </button>
     </header>
 
+    <aside class="socials">
+        <a href="https://github.com/httparham" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5.5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.4 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+    </aside>
+
+    <div class="hero-figure" id="hero-figure">
+        <div class="hero-glow"></div>
+        <div class="hero-spin" id="hero-spin" aria-hidden="true">
+            <img class="is-on" src="images/rotate/rotate-00.jpg?v=8" alt="Muhammad Arham Khan">
+        </div>
+        <img class="hero-fallback" src="images/hero-rotate.webp?v=4" alt="Muhammad Arham Khan">
+    </div>
+
     <main id="main">
-        <section class="hero" id="top" aria-labelledby="hero-name">
-            <p class="eyebrow">
-                <span class="status-dot" aria-hidden="true"></span>
-                <span>Islamabad, Pakistan · Software Engineer</span>
-            </p>
-            <h1 id="hero-name">Muhammad<br>Aavish Khan</h1>
-            <p class="hero-lede">
-                Full-stack developer with 2+ years of hands-on experience building scalable web applications using Python (Django, FastAPI) and React. Specialized in API development, real-time applications, automation, and AI-powered solutions. Proven track record of optimizing backend architectures, managing end-to-end deployments, and building robust production infrastructure.
-            </p>
-
-            <div class="hero-meta">
-                <a class="meta-link" href="mailto:aavish.khan786@gmail.com">
-                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    aavish.khan786@gmail.com
-                </a>
-                <a class="meta-link" href="tel:+923028989268">
-                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7.5 4.5h2.2c.4 0 .8.3.9.7l.7 2.4c.1.4 0 .8-.3 1.1L9.6 10.3a11.5 11.5 0 0 0 4.1 4.1l1.6-1.4c.3-.3.7-.4 1.1-.3l2.4.7c.4.1.7.5.7.9v2.2c0 .8-.7 1.5-1.5 1.4C9.6 17.1 6.9 14.4 6.1 6c-.1-.8.6-1.5 1.4-1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                    +92 302 8989268
-                </a>
-                <a class="meta-link" href="https://linkedin.com/in/aavishkhan" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 10.5V16.5M8 7.5v.01M12 16.5v-3.8c0-1.2.8-2.2 2-2.2s2 1 2 2.2v3.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    LinkedIn
-                </a>
+        <section class="landing" id="top">
+            <div class="landing-left">
+                <p class="hello">Hello! I’m</p>
+                <h1>ARHAM<br>KHAN</h1>
+            </div>
+            <div class="landing-right">
+                <p class="hello">An</p>
+                <p class="role-line"><span>Python Engineer</span></p>
+                <p class="role-line dim">Full-Stack Developer</p>
             </div>
         </section>
 
-        <section class="section strengths" id="overview" aria-labelledby="strengths-title">
-            <div class="section-head">
-                <p class="section-index">01</p>
-                <h2 id="strengths-title">Core strengths</h2>
+        <section class="about" id="about">
+            <div class="about-title">
+                <h2>What <em>I</em> <span>Do</span></h2>
             </div>
-            <div class="strength-grid">
-                <article class="strength-card">
-                    <h3>End-to-end system design</h3>
-                    <p>Architecting scalable solutions from scratch, from database schema design through frontend deployment.</p>
+            <div class="do-stack">
+                <article class="do-card is-open">
+                    <span class="corner" aria-hidden="true"></span>
+                    <p class="kicker">01</p>
+                    <h3>Python / Backend</h3>
+                    <p class="lead">Building APIs and enterprise platforms</p>
+                    <p>Django and FastAPI services, PostgreSQL systems, JWT auth, and production work on multi-tenant healthcare and education products.</p>
+                    <p class="kicker">Skillset &amp; tools</p>
+                    <ul class="chips">
+                        <li>Python</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>PostgreSQL</li><li>REST</li><li>Docker</li>
+                    </ul>
                 </article>
-                <article class="strength-card">
-                    <h3>Performance optimization</h3>
-                    <p>Tuning APIs and database queries for large-scale deployments, delivering substantial performance gains in enterprise systems.</p>
-                </article>
-                <article class="strength-card">
-                    <h3>DevOps &amp; infrastructure</h3>
-                    <p>Containerizing applications with Docker, managing Linux servers, and deploying CI/CD workflows.</p>
+                <article class="do-card">
+                    <span class="corner" aria-hidden="true"></span>
+                    <p class="kicker">02</p>
+                    <h3>AI Applications</h3>
+                    <p class="lead">NLP, automation, and intelligent workflows</p>
+                    <p>Email classification, sentiment analysis, and AI-assisted tooling with OpenAI APIs — used in real product work.</p>
+                    <p class="kicker">Skillset &amp; tools</p>
+                    <ul class="chips">
+                        <li>OpenAI</li><li>NLP</li><li>Hugging Face</li><li>PyTorch</li><li>TensorFlow</li>
+                    </ul>
                 </article>
             </div>
         </section>
 
-        <section class="section" id="experience" aria-labelledby="experience-title">
-            <div class="section-head">
-                <p class="section-index">02</p>
-                <h2 id="experience-title">Experience</h2>
+        <section class="work" id="work">
+            <div class="work-head">
+                <h2>My <span>Work</span></h2>
             </div>
+            <div class="work-pin">
+                <div class="work-track" id="work-track">
+                    <article class="work-card">
+                        <div class="work-copy">
+                            <div class="work-title">
+                                <p class="kicker">01</p>
+                                <div>
+                                    <h3>LMS / CMS</h3>
+                                    <p class="lead">Education / Full-stack</p>
+                                </div>
+                            </div>
+                            <p>Student lifecycle, exams, fee challans, assignments, e-library, and a student portal.</p>
+                            <p class="tools">Python · Django · PostgreSQL · REST</p>
+                        </div>
+                        <div class="work-shot">
+                            <img src="images/work-lms.jpg" alt="LMS dashboard interface">
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-copy">
+                            <div class="work-title">
+                                <p class="kicker">02</p>
+                                <div>
+                                    <h3>HIMS backend</h3>
+                                    <p class="lead">Healthcare / Backend</p>
+                                </div>
+                            </div>
+                            <p>Multi-tenant hospital platform used across 100+ hospitals — pharmacy, clinical, inventory, finance, HR.</p>
+                            <p class="tools">Django REST · PostgreSQL · JWT · Docker</p>
+                        </div>
+                        <div class="work-shot">
+                            <img src="images/work-hims.jpg" alt="Hospital information system dashboard">
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-copy">
+                            <div class="work-title">
+                                <p class="kicker">03</p>
+                                <div>
+                                    <h3>FBR / PRAL bridge</h3>
+                                    <p class="lead">Integration</p>
+                                </div>
+                            </div>
+                            <p>Healthcare billing connected to FBR/PRAL through a Flask local-to-cloud bridge.</p>
+                            <p class="tools">Flask · Python · HTTP APIs</p>
+                        </div>
+                        <div class="work-shot">
+                            <img src="images/work-fbr.jpg" alt="Invoicing interface">
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-copy">
+                            <div class="work-title">
+                                <p class="kicker">04</p>
+                                <div>
+                                    <h3>AI email</h3>
+                                    <p class="lead">AI / NLP</p>
+                                </div>
+                            </div>
+                            <p>Classification and assisted replies using Python, OpenAI APIs, and NLP.</p>
+                            <p class="tools">Python · OpenAI · NLP</p>
+                        </div>
+                        <div class="work-shot">
+                            <img src="images/work-email.jpg" alt="AI email interface">
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-copy">
+                            <div class="work-title">
+                                <p class="kicker">05</p>
+                                <div>
+                                    <h3>Social Sentiment</h3>
+                                    <p class="lead">Academic / ML</p>
+                                </div>
+                            </div>
+                            <p>Final-year project NGIRI-2024-23753. Sentiment analysis with machine learning.</p>
+                            <p class="tools">Python · ML · NLP</p>
+                        </div>
+                        <div class="work-shot">
+                            <img src="images/work-sentiment.jpg" alt="Sentiment analysis dashboard">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-            <ol class="timeline">
-                <li class="job">
-                    <div class="job-meta">
-                        <p class="job-dates">Jul 2026 — Present</p>
-                        <p class="job-place">Current role</p>
-                    </div>
-                    <div class="job-body">
-                        <h3>SQA Intern</h3>
+        <section class="career" id="career">
+            <h2>Career</h2>
+            <ol class="career-list">
+                <li>
+                    <p class="kicker">2025 — Present</p>
+                    <div>
+                        <h3>Associate Software Engineer</h3>
+                        <p class="lead">Camden Health System</p>
+                        <p>Backend APIs for multi-tenant healthcare and education platforms. HIMS, LMS, FBR invoicing, chat APIs.</p>
                     </div>
                 </li>
-                <li class="job">
-                    <div class="job-meta">
-                        <p class="job-dates">Jul 2024 — Mar 2025</p>
-                        <p class="job-place">GoldBarTech Pvt Ltd</p>
-                    </div>
-                    <div class="job-body">
+                <li>
+                    <p class="kicker">2024 — 2025</p>
+                    <div>
                         <h3>Python Developer</h3>
-                        <ul>
-                            <li>Developed an automated Amazon web scraper running bi-daily for product data collection and market analysis.</li>
-                            <li>Created machine learning and AI models for large-scale data classification and processing.</li>
-                            <li>Designed automated SMTP email tools for efficient bulk communication workflows.</li>
-                        </ul>
+                        <p class="lead">GoldBarTech Pvt Ltd</p>
+                        <p>Backend services, automation tools, and data-processing workflows.</p>
                     </div>
                 </li>
-                <li class="job">
-                    <div class="job-meta">
-                        <p class="job-dates">Mar 2023 — Apr 2023</p>
-                        <p class="job-place">Arctic Solution Ltd</p>
-                    </div>
-                    <div class="job-body">
-                        <h3>Web Developer</h3>
-                        <ul>
-                            <li>Led automation system development, achieving a 15% increase in operational efficiency across managed tasks.</li>
-                            <li>Developed dynamic, responsive websites tailored for small-business clients.</li>
-                        </ul>
+                <li>
+                    <p class="kicker">2023</p>
+                    <div>
+                        <h3>Intern · Eziline Software House</h3>
+                        <p>Frontend and web development with Angular and Nuxt.js.</p>
                     </div>
                 </li>
-            </ol>
-        </section>
-
-        <section class="section" id="projects" aria-labelledby="projects-title">
-            <div class="section-head">
-                <p class="section-index">03</p>
-                <h2 id="projects-title">Selected work</h2>
-            </div>
-
-            <ol class="project-list">
-                <li class="project">
-                    <p class="project-index">01</p>
-                    <div class="project-content">
-                        <h3>AI-Powered Email Management System</h3>
-                        <p>Scalable platform with multi-tenant architecture and AI-driven email classification.</p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li>Django</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>OpenAI APIs</li>
-                        </ul>
+                <li>
+                    <p class="kicker">2023</p>
+                    <div>
+                        <h3>Web Developer · Arctic Solution Ltd</h3>
+                        <p>Client-facing sites and applications.</p>
                     </div>
                 </li>
-                <li class="project">
-                    <p class="project-index">02</p>
-                    <div class="project-content">
-                        <h3>Full-Stack Video Calling Platform</h3>
-                        <p>Real-time conferencing with peer-to-peer communication, multi-user rooms, screen sharing, and containerized Docker deployment.</p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li>WebRTC</li>
-                            <li>Socket.IO</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="project">
-                    <p class="project-index">03</p>
-                    <div class="project-content">
-                        <h3>Medical Store Management System</h3>
-                        <p>Full-stack ERP with inventory, billing, role-based access control, and sales analytics.</p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li>Django REST</li>
-                            <li>Angular</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="project">
-                    <p class="project-index">04</p>
-                    <div class="project-content">
-                        <h3>Amazon E-commerce Data Suite</h3>
-                        <p>Automated scraping tools for real-time product data extraction and monitoring.</p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li>Python</li>
-                            <li>Selenium</li>
-                            <li>Google Sheets API</li>
-                        </ul>
+                <li>
+                    <p class="kicker">2021 — 2023</p>
+                    <div>
+                        <h3>Teacher · Skills Science College · Web Developer · Mak Traders</h3>
                     </div>
                 </li>
             </ol>
         </section>
 
-        <section class="section" id="skills" aria-labelledby="skills-title">
-            <div class="section-head">
-                <p class="section-index">04</p>
-                <h2 id="skills-title">Technical skills</h2>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h3>Languages</h3>
-                    <ul class="tags">
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                    </ul>
+        <section class="stack" id="stack">
+            <div class="stack-glow" aria-hidden="true"></div>
+            <h2>Tech Stack</h2>
+            <div class="stack-pyramid">
+                <div class="stack-row">
+                    <a class="stack-item" href="https://python.org" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
+                        <span>Python</span>
+                    </a>
+                    <a class="stack-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+                        <span>JavaScript</span>
+                    </a>
+                    <a class="stack-item" href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="">
+                        <span>TypeScript</span>
+                    </a>
+                    <a class="stack-item" href="https://react.dev" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">
+                        <span>React</span>
+                    </a>
+                    <a class="stack-item" href="https://angular.dev" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="">
+                        <span>Angular</span>
+                    </a>
+                    <a class="stack-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+                        <span>HTML</span>
+                    </a>
                 </div>
-                <div class="skill-group">
-                    <h3>Backend</h3>
-                    <ul class="tags">
-                        <li>Node.js</li>
-                        <li>Django</li>
-                        <li>FastAPI</li>
-                        <li>Flask</li>
-                    </ul>
+                <div class="stack-row">
+                    <a class="stack-item" href="https://www.djangoproject.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="">
+                        <span>Django</span>
+                    </a>
+                    <a class="stack-item" href="https://fastapi.tiangolo.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="">
+                        <span>FastAPI</span>
+                    </a>
+                    <a class="stack-item" href="https://flask.palletsprojects.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="">
+                        <span>Flask</span>
+                    </a>
+                    <a class="stack-item" href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">
+                        <span>PostgreSQL</span>
+                    </a>
+                    <a class="stack-item" href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
+                        <span>MongoDB</span>
+                    </a>
                 </div>
-                <div class="skill-group">
-                    <h3>Frontend</h3>
-                    <ul class="tags">
-                        <li>React</li>
-                        <li>Angular</li>
-                        <li>Nuxt.js</li>
-                    </ul>
+                <div class="stack-row">
+                    <a class="stack-item" href="https://redis.io" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="">
+                        <span>Redis</span>
+                    </a>
+                    <a class="stack-item" href="https://www.docker.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">
+                        <span>Docker</span>
+                    </a>
+                    <a class="stack-item" href="https://www.linux.org" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">
+                        <span>Linux</span>
+                    </a>
+                    <a class="stack-item" href="https://nginx.org" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="">
+                        <span>NGINX</span>
+                    </a>
                 </div>
-                <div class="skill-group">
-                    <h3>Databases</h3>
-                    <ul class="tags">
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>Supabase</li>
-                    </ul>
+                <div class="stack-row">
+                    <a class="stack-item" href="https://openai.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/openai/ffffff" alt="">
+                        <span>OpenAI</span>
+                    </a>
+                    <a class="stack-item" href="https://huggingface.co" target="_blank" rel="noopener noreferrer">
+                        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="">
+                        <span>Hugging Face</span>
+                    </a>
+                    <a class="stack-item" href="https://pytorch.org" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="">
+                        <span>PyTorch</span>
+                    </a>
                 </div>
-                <div class="skill-group">
-                    <h3>DevOps &amp; tools</h3>
-                    <ul class="tags">
-                        <li>Docker</li>
-                        <li>NGINX</li>
-                        <li>Heroku</li>
-                        <li>Git</li>
-                        <li>Linux</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h3>AI / ML</h3>
-                    <ul class="tags">
-                        <li>OpenAI APIs</li>
-                        <li>NLP</li>
-                        <li>OpenCV</li>
-                        <li>Sentiment Analysis</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h3>Real-time</h3>
-                    <ul class="tags">
-                        <li>WebRTC</li>
-                        <li>Socket.IO</li>
-                        <li>RabbitMQ</li>
-                        <li>WebSockets</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h3>Automation</h3>
-                    <ul class="tags">
-                        <li>Selenium</li>
-                        <li>Chrome Extensions</li>
-                        <li>Pandas</li>
-                    </ul>
+                <div class="stack-row">
+                    <a class="stack-item" href="https://git-scm.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
+                        <span>Git</span>
+                    </a>
+                    <a class="stack-item" href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                        <span>GitHub</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="education" aria-labelledby="education-title">
-            <div class="section-head">
-                <p class="section-index">05</p>
-                <h2 id="education-title">Education</h2>
-            </div>
-            <div class="edu">
-                <div class="edu-meta">
-                    <p class="job-dates">2022 — 2026</p>
-                    <p class="job-place">Islamabad</p>
-                </div>
-                <div class="edu-body">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <p class="edu-school">Capital University of Science and Technology (CUST)</p>
-                    <p class="edu-focus">Specialization in Artificial Intelligence, Web Systems, and Cybersecurity.</p>
-                </div>
-            </div>
+        <section class="contact" id="contact">
+            <p class="hello">Let’s work together</p>
+            <a class="contact-line" href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">github.com/httparham</a>
+            <p class="muted">Lahore / Islamabad · BSCS CUST 2024</p>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-copy">
-                <p class="footer-kicker">Let’s work together</p>
-                <a class="footer-email" href="mailto:aavish.khan786@gmail.com">aavish.khan786@gmail.com</a>
-            </div>
-            <div class="footer-meta">
-                <p>© <span id="year"></span> Muhammad Aavish Khan</p>
-                <p>Islamabad, Pakistan</p>
-            </div>
-        </div>
+    <footer>
+        <p>© <span id="year"></span> Muhammad Arham Khan</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="script.js?v=16"></script>
 </body>
 </html>
