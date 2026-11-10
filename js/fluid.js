@@ -1,7 +1,7 @@
 import {
     quadVert, fluidVert, copyFrag, splatFrag, advectFrag, divergenceFrag,
     curlFrag, vorticityFrag, pressureFrag, gradientSubtractFrag, maskFrag,
-} from './shaders.js?v=31';
+} from './shaders.js?v=40';
 
 const T = window.THREE;
 
@@ -165,7 +165,6 @@ export class Fluid {
     }
 
     get velocityTexture() { return this.velocity.read.texture; }
-    get densityTexture() { return this.density.read.texture; }
     get maskTexture() { return this.mask.texture; }
 
     /**

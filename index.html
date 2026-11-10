@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arham Khan — Python / Full-stack engineer</title>
-    <meta name="description" content="Arham Khan is a Python and full-stack engineer: an open logbook of multi-tenant Django and FastAPI platforms for healthcare and education, PostgreSQL systems, and LLM-assisted tooling in production.">
+    <title>Arham Khan — Python Backend / Full-stack Developer</title>
+    <meta name="description" content="Muhammad Arham Khan is a Python backend developer in Islamabad with 3+ years building REST APIs, multi-tenant systems and automation tools with Django, Django REST Framework, FastAPI and Flask.">
     <meta name="theme-color" content="#000000">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=40">
 </head>
 <body>
     <canvas id="bg" aria-hidden="true"></canvas>
 
-    <div class="ui">
-        <header class="brand">
+    <header class="top">
+        <a class="brand" href="#top" aria-label="Arham Khan, back to top">
             <svg class="mark" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
                 <circle cx="20" cy="20" r="18.5" fill="none" stroke="#fff" stroke-width="1.6"/>
                 <polygon fill="#fff" points="20,8 22.3,17.7 32,20 22.3,22.3 20,32 17.7,22.3 8,20 17.7,17.7"/>
             </svg>
             <div>
                 <h1 class="name">Arham Khan</h1>
-                <p class="sub">Python / Full-stack engineer</p>
+                <p class="sub">Python backend / Full-stack developer</p>
             </div>
-        </header>
+        </a>
+        <nav class="menu" aria-label="Sections">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#stack">Stack</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="counter" title="Projects" data-count="projects">16</div>
+    </header>
 
-        <div class="counter" id="counter" aria-label="Project count">05</div>
-
-        <nav class="tags" id="tags" aria-label="Filter projects">
+    <section class="hero" id="top" aria-label="Introduction">
+        <nav class="tags" id="tags" aria-label="Filter featured projects">
             <button class="chip is-active" type="button" data-tag="all">All</button>
             <button class="chip" type="button" data-tag="python">Python</button>
             <button class="chip" type="button" data-tag="django">Django</button>
-            <button class="chip" type="button" data-tag="fastapi">FastAPI</button>
+            <button class="chip" type="button" data-tag="rest">REST</button>
             <button class="chip" type="button" data-tag="flask">Flask</button>
             <button class="chip" type="button" data-tag="postgres">PostgreSQL</button>
             <button class="chip" type="button" data-tag="ai">AI / NLP</button>
@@ -39,8 +46,8 @@
             <button class="chip" type="button" data-tag="docker">Docker</button>
         </nav>
 
-        <section class="list" id="list" aria-label="Projects">
-            <article class="card" data-tags="python django postgres edu">
+        <div class="list" id="list" role="region" aria-label="Featured projects">
+            <article class="card" data-tags="python django rest postgres edu">
                 <div class="thumb">
                     <img src="images/work-lms.jpg" alt="LMS dashboard" loading="lazy" decoding="async">
                 </div>
@@ -51,7 +58,7 @@ Student lifecycle, exams, fees</p>
 Django, PostgreSQL</p>
                 </div>
             </article>
-            <article class="card" data-tags="python django postgres health docker">
+            <article class="card" data-tags="python django rest postgres health docker">
                 <div class="thumb">
                     <img src="images/work-hims.jpg" alt="Hospital information system" loading="lazy" decoding="async">
                 </div>
@@ -73,7 +80,7 @@ Local-to-cloud invoicing</p>
 Flask, HTTP APIs</p>
                 </div>
             </article>
-            <article class="card" data-tags="python ai fastapi">
+            <article class="card" data-tags="python ai">
                 <div class="thumb">
                     <img src="images/work-email.jpg" alt="AI email classification" loading="lazy" decoding="async">
                 </div>
@@ -95,46 +102,258 @@ FYP NGIRI-2024-23753</p>
 Python, NLP</p>
                 </div>
             </article>
-        </section>
+        </div>
 
-        <aside class="about">
+        <aside class="intro">
             <div class="block">
                 <h2>[info]</h2>
-                <p>Backend and AI application engineer. Lahore / Islamabad. Open to remote work.</p>
-            </div>
-            <div class="block">
-                <h2>[about]</h2>
-                <p>Builds and ships multi-tenant Django / FastAPI platforms for healthcare and education, PostgreSQL systems, JWT auth, and LLM-assisted tooling that runs in production.</p>
-                <p>BSCS, Capital University of Science and Technology, 2024.</p>
+                <p>Python backend developer, 3+ years. Islamabad, Pakistan. Open to backend and full-stack Python roles.</p>
             </div>
             <div class="block career">
                 <h2>[career]</h2>
                 <ul>
-                    <li>2025 - now &nbsp;Associate Software Engineer, Camden Health System</li>
-                    <li>2024 - 25 &nbsp;Python Developer, GoldBarTech</li>
-                    <li>2023 &nbsp;Eziline Software House, Arctic Solution</li>
-                    <li>2021 - 23 &nbsp;Teaching, Skills Science College</li>
-                </ul>
-            </div>
-            <div class="block">
-                <h2>[exploring]</h2>
-                <ul>
-                    <li>Multi-tenant Django systems</li>
-                    <li>FastAPI services</li>
-                    <li>LLM-assisted workflows</li>
-                    <li>PostgreSQL at scale</li>
+                    <li>2025 - now &nbsp;Camden Health System</li>
+                    <li>2024 - 25 &nbsp;GoldBarTech</li>
+                    <li>2023 &nbsp;Eziline, Arctic Solution</li>
+                    <li>2021 - 23 &nbsp;Skills Science College, Mak Traders</li>
                 </ul>
             </div>
             <div class="block">
                 <h2>[connect]</h2>
                 <a href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">GitHub -&gt; github.com/httparham</a>
-                <a href="Arham.pdf" target="_blank" rel="noopener noreferrer">CV -&gt; Arham Khan, PDF</a>
+                <a href="https://www.linkedin.com/in/arhamist" target="_blank" rel="noopener noreferrer">LinkedIn -&gt; linkedin.com/in/arhamist</a>
                 <a href="mailto:http.arham@gmail.com">Mail -&gt; http.arham@gmail.com</a>
+                <a href="Arham.pdf" target="_blank" rel="noopener noreferrer">CV -&gt; Arham Khan, PDF</a>
             </div>
         </aside>
+
+        <a class="cue" href="#about">Scroll</a>
+    </section>
+
+    <div class="page">
+        <main>
+            <section class="sec" id="about" aria-labelledby="about-title">
+                <div class="sec-head">
+                    <h2 class="sec-title" id="about-title">[about]</h2>
+                    <span class="sec-no">01 / 04</span>
+                </div>
+                <div class="about-grid">
+                    <div data-reveal>
+                        <p class="lead">Python backend developer with 3+ years building REST APIs, multi-tenant systems and automation tools with Django, Django REST Framework, FastAPI and Flask. Currently building backend systems for HIMS and LMS / CMS platforms designed for 100+ hospitals at Camden Health System. Strong in PostgreSQL, Redis, Celery, RabbitMQ, Docker and WebSockets, with AI applications built on the OpenAI API and NLP.</p>
+                        <p class="note">BSCS, Capital University of Science and Technology, 2020 - 2024. Currently learning AWS and LLMs.</p>
+                    </div>
+                    <dl class="stats" data-reveal-children>
+                        <div class="stat"><dt>Years of experience</dt><dd>3+</dd></div>
+                        <div class="stat"><dt>Hospitals the HIMS is built for</dt><dd>100+</dd></div>
+                        <div class="stat"><dt>Projects on this page</dt><dd data-count="projects">16</dd></div>
+                        <div class="stat"><dt>Spoken languages: English, Chinese, Urdu</dt><dd>3</dd></div>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="sec" id="projects" aria-labelledby="projects-title">
+                <div class="sec-head">
+                    <h2 class="sec-title" id="projects-title">[projects]</h2>
+                    <span class="sec-no">02 / 04</span>
+                </div>
+
+                <div class="feat" data-reveal-children>
+                    <article class="proj" data-project>
+                        <div class="proj-thumb"><img src="images/work-hims.jpg" alt="Hospital information system dashboard" loading="lazy" decoding="async"></div>
+                        <div class="proj-meta">
+                            <h3><span>01</span> HIMS backend</h3>
+                            <p class="proj-kind">Healthcare / backend</p>
+                        </div>
+                        <p class="proj-text">Backend services and REST APIs for a multi-tenant hospital platform designed for 100+ hospitals.</p>
+                        <p class="proj-stack">Python, Django REST, PostgreSQL, Docker</p>
+                    </article>
+                    <article class="proj" data-project>
+                        <div class="proj-thumb"><img src="images/work-lms.jpg" alt="LMS dashboard" loading="lazy" decoding="async"></div>
+                        <div class="proj-meta">
+                            <h3><span>02</span> LMS / CMS</h3>
+                            <p class="proj-kind">Education / full-stack</p>
+                        </div>
+                        <p class="proj-text">Student lifecycle, exams, fee challans, assignments, e-library and a student portal.</p>
+                        <p class="proj-stack">Python, Django, PostgreSQL, REST</p>
+                    </article>
+                    <article class="proj" data-project>
+                        <div class="proj-thumb"><img src="images/work-fbr.jpg" alt="FBR invoicing interface" loading="lazy" decoding="async"></div>
+                        <div class="proj-meta">
+                            <h3><span>03</span> FBR / PRAL bridge</h3>
+                            <p class="proj-kind">Integration</p>
+                        </div>
+                        <p class="proj-text">Healthcare billing connected to FBR / PRAL invoicing through a Flask bridge service.</p>
+                        <p class="proj-stack">Flask, Python, HTTP APIs</p>
+                    </article>
+                    <article class="proj" data-project>
+                        <div class="proj-thumb"><img src="images/work-email.jpg" alt="AI email interface" loading="lazy" decoding="async"></div>
+                        <div class="proj-meta">
+                            <h3><span>04</span> AI email classifier</h3>
+                            <p class="proj-kind">AI / NLP</p>
+                        </div>
+                        <p class="proj-text">OpenAI-based system that identifies and manages emails for large-scale email marketing.</p>
+                        <p class="proj-stack">Python, OpenAI API, NLP</p>
+                    </article>
+                    <article class="proj" data-project>
+                        <div class="proj-thumb"><img src="images/work-sentiment.jpg" alt="Sentiment analysis dashboard" loading="lazy" decoding="async"></div>
+                        <div class="proj-meta">
+                            <h3><span>05</span> Social sentiment</h3>
+                            <p class="proj-kind">Academic / ML</p>
+                        </div>
+                        <p class="proj-text">Final-year project NGIRI-2024-23753: sentiment analysis with machine learning and NLP.</p>
+                        <p class="proj-stack">Python, ML, NLP</p>
+                    </article>
+                </div>
+
+                <div class="row head" aria-hidden="true">
+                    <span>No</span><span>Project</span><span>What it does</span><span>Stack</span>
+                </div>
+                <ol class="index" data-reveal-children>
+                    <li class="row" data-project>
+                        <span class="n">06</span>
+                        <span class="t">Multi-tenant email platform</span>
+                        <span class="d">Zoho / Gmail-like service with individual and organization accounts, role-based access control, DKIM / SPF and external mail server integration.</span>
+                        <span class="s">Django, PostgreSQL, MongoDB</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">07</span>
+                        <span class="t">Video calling platform</span>
+                        <span class="d">Peer-to-peer calls where four people share video, messages and screen.</span>
+                        <span class="s">WebRTC, Socket.IO, React</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">08</span>
+                        <span class="t">PMTA server agent</span>
+                        <span class="d">Central frontend with agents on client servers: DKIM / SPF generation, domain hosting, file management and server automation.</span>
+                        <span class="s">Flask, Python</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">09</span>
+                        <span class="t">Amazon scraper</span>
+                        <span class="d">Collects product data automatically every 12 hours.</span>
+                        <span class="s">Python, Playwright, Selenium</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">10</span>
+                        <span class="t">Helium 10 Chrome extension</span>
+                        <span class="d">Scrapes Amazon X-Ray sheet data in one click, with USA and UK versions, and pushes it to Google Sheets.</span>
+                        <span class="s">Chrome extension, Google Sheets</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">11</span>
+                        <span class="t">SMTP bulk email tool</span>
+                        <span class="d">Sending tool for automated bulk email communication.</span>
+                        <span class="s">SMTP</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">12</span>
+                        <span class="t">Sages</span>
+                        <span class="d">Conversational AI platform with human-like responses and voice interaction.</span>
+                        <span class="s">Django, conversational AI</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">13</span>
+                        <span class="t">Therapy platform</span>
+                        <span class="d">Therapists and patients schedule sessions and manage therapy activities. Full-stack lead.</span>
+                        <span class="s">Docker, full-stack</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">14</span>
+                        <span class="t">Medical store management</span>
+                        <span class="d">Inventory tracking and billing for a medical store.</span>
+                        <span class="s">Role-based access control</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">15</span>
+                        <span class="t">CCTV recognition</span>
+                        <span class="d">Detects people in video feeds and retrieves their database profiles.</span>
+                        <span class="s">Python</span>
+                    </li>
+                    <li class="row" data-project>
+                        <span class="n">16</span>
+                        <span class="t">McDonald's locations scraper</span>
+                        <span class="d">Location data for every McDonald's branch in the USA, collected for business analysis.</span>
+                        <span class="s">Selenium</span>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="sec" id="stack" aria-labelledby="stack-title">
+                <div class="sec-head">
+                    <h2 class="sec-title" id="stack-title">[stack]</h2>
+                    <span class="sec-no">03 / 04</span>
+                </div>
+                <div class="tech" data-reveal-children>
+                    <div class="tech-row">
+                        <h3>Languages</h3>
+                        <ul><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>HTML</li><li>CSS</li><li>C++</li><li>Java</li><li>PHP</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>Backend</h3>
+                        <ul><li>Django</li><li>Django REST Framework</li><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>NestJS</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>APIs and real-time</h3>
+                        <ul><li>REST APIs</li><li>WebSockets</li><li>Socket.IO</li><li>WebRTC</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>Databases</h3>
+                        <ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>Supabase</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>Async and queues</h3>
+                        <ul><li>Celery</li><li>RabbitMQ</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>DevOps</h3>
+                        <ul><li>Docker</li><li>NGINX</li><li>Linux</li><li>Git</li><li>GitHub</li><li>Heroku</li><li>Netlify</li><li>Azure</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>Automation</h3>
+                        <ul><li>Playwright</li><li>Selenium</li><li>Chrome extensions</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>AI / ML</h3>
+                        <ul><li>OpenAI API</li><li>NLP</li><li>Text classification</li><li>Sentiment analysis</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>Frontend</h3>
+                        <ul><li>Angular</li><li>Next.js</li><li>Nuxt.js</li><li>React</li><li>jQuery</li></ul>
+                    </div>
+                    <div class="tech-row">
+                        <h3>Learning</h3>
+                        <ul><li>AWS S3</li><li>AWS EC2</li><li>AWS API Gateway</li><li>LLMs</li></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec" id="contact" aria-labelledby="contact-title">
+                <div class="sec-head">
+                    <h2 class="sec-title" id="contact-title">[contact]</h2>
+                    <span class="sec-no">04 / 04</span>
+                </div>
+                <div data-reveal>
+                    <p class="contact-lead">Open to backend and full-stack Python roles.</p>
+                    <a class="mail" href="mailto:http.arham@gmail.com">http.arham@gmail.com</a>
+                </div>
+                <dl class="contact-list" data-reveal-children>
+                    <div><dt>Phone</dt><dd><a href="tel:+923315868638">+92 331 5868638</a></dd></div>
+                    <div><dt>Phone</dt><dd><a href="tel:+923025378664">+92 302 5378664</a></dd></div>
+                    <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/arhamist" target="_blank" rel="noopener noreferrer">linkedin.com/in/arhamist</a></dd></div>
+                    <div><dt>GitHub</dt><dd><a href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">github.com/httparham</a></dd></div>
+                    <div><dt>CV</dt><dd><a href="Arham.pdf" target="_blank" rel="noopener noreferrer">Arham.pdf</a></dd></div>
+                    <div><dt>Based in</dt><dd>Islamabad, Pakistan</dd></div>
+                </dl>
+            </section>
+        </main>
+
+        <footer class="foot">
+            <p>&copy; <span id="year">2026</span> Muhammad Arham Khan</p>
+            <a href="#top">Back to top -&gt;</a>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
-    <script type="module" src="js/main.js?v=31"></script>
+    <script type="module" src="js/main.js?v=40"></script>
 </body>
 </html>

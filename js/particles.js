@@ -1,5 +1,5 @@
-import { simFrag, pointsVert, pointsFrag, copyFrag } from './shaders.js?v=31';
-import { FullscreenPass, PingPong } from './fluid.js?v=31';
+import { simFrag, pointsVert, pointsFrag, copyFrag } from './shaders.js?v=40';
+import { FullscreenPass, PingPong } from './fluid.js?v=40';
 
 const T = window.THREE;
 
@@ -144,7 +144,7 @@ export class Particles {
     fit(aspect) {
         const k = aspect < 1 ? Math.max(0.55, aspect * 0.9) : 1;
         this.group.scale.set(5 * k, 5 * k, 6 * k);
-        if (aspect < 1) this.group.position.set(0.05, 0.85, -1);
+        if (aspect < 1) this.group.position.set(0.05, 0.62, -1);
         else this.group.position.set(-0.15, 0.16, -1);
     }
 
