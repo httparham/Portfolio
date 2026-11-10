@@ -3,343 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Arham Khan — Full Stack Python Developer</title>
-    <meta name="description" content="Full Stack Python Developer and AI Applications Engineer. Django, FastAPI, PostgreSQL, healthcare and education platforms.">
-    <meta name="theme-color" content="#0b080c">
+    <title>Arham Khan — Python / Full-stack engineer</title>
+    <meta name="description" content="Arham Khan is a Python and full-stack engineer: an open logbook of multi-tenant Django and FastAPI platforms for healthcare and education, PostgreSQL systems, and LLM-assisted tooling in production.">
+    <meta name="theme-color" content="#000000">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=16">
+    <link rel="stylesheet" href="style.css?v=31">
 </head>
 <body>
-    <div class="loader" id="loader">
-        <p class="loader-name">Arham Khan</p>
-        <p class="loader-count" id="loader-count">0%</p>
-        <p class="loader-hint">Welcome</p>
-    </div>
+    <canvas id="bg" aria-hidden="true"></canvas>
 
-    <div class="cursor" id="cursor" aria-hidden="true"></div>
-    <div class="orb orb-a" aria-hidden="true"></div>
-    <div class="orb orb-b" aria-hidden="true"></div>
-    <div class="nav-fade" aria-hidden="true"></div>
+    <div class="ui">
+        <header class="brand">
+            <svg class="mark" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+                <circle cx="20" cy="20" r="18.5" fill="none" stroke="#fff" stroke-width="1.6"/>
+                <polygon fill="#fff" points="20,8 22.3,17.7 32,20 22.3,22.3 20,32 17.7,22.3 8,20 17.7,17.7"/>
+            </svg>
+            <div>
+                <h1 class="name">Arham Khan</h1>
+                <p class="sub">Python / Full-stack engineer</p>
+            </div>
+        </header>
 
-    <a class="skip-link" href="#main">Skip to content</a>
+        <div class="counter" id="counter" aria-label="Project count">05</div>
 
-    <header class="site-header">
-        <a class="logo" href="#top">AK</a>
-        <nav id="site-nav">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#career">Career</a>
-            <a href="#contact">Contact</a>
+        <nav class="tags" id="tags" aria-label="Filter projects">
+            <button class="chip is-active" type="button" data-tag="all">All</button>
+            <button class="chip" type="button" data-tag="python">Python</button>
+            <button class="chip" type="button" data-tag="django">Django</button>
+            <button class="chip" type="button" data-tag="fastapi">FastAPI</button>
+            <button class="chip" type="button" data-tag="flask">Flask</button>
+            <button class="chip" type="button" data-tag="postgres">PostgreSQL</button>
+            <button class="chip" type="button" data-tag="ai">AI / NLP</button>
+            <button class="chip" type="button" data-tag="health">Healthcare</button>
+            <button class="chip" type="button" data-tag="edu">Education</button>
+            <button class="chip" type="button" data-tag="docker">Docker</button>
         </nav>
-        <a class="header-mail" href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">github.com/httparham</a>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-            <span></span><span></span>
-        </button>
-    </header>
 
-    <aside class="socials">
-        <a href="https://github.com/httparham" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5.5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.4 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </a>
-    </aside>
+        <section class="list" id="list" aria-label="Projects">
+            <article class="card" data-tags="python django postgres edu">
+                <div class="thumb">
+                    <img src="images/work-lms.jpg" alt="LMS dashboard" loading="lazy" decoding="async">
+                </div>
+                <div class="meta">
+                    <p>LMS / CMS
+Student lifecycle, exams, fees</p>
+                    <p>Education / full-stack
+Django, PostgreSQL</p>
+                </div>
+            </article>
+            <article class="card" data-tags="python django postgres health docker">
+                <div class="thumb">
+                    <img src="images/work-hims.jpg" alt="Hospital information system" loading="lazy" decoding="async">
+                </div>
+                <div class="meta">
+                    <p>HIMS / backend
+100+ hospitals, multi-tenant</p>
+                    <p>Healthcare / API
+Django REST, JWT, Docker</p>
+                </div>
+            </article>
+            <article class="card" data-tags="python flask health">
+                <div class="thumb">
+                    <img src="images/work-fbr.jpg" alt="FBR invoicing bridge" loading="lazy" decoding="async">
+                </div>
+                <div class="meta">
+                    <p>FBR / PRAL bridge
+Local-to-cloud invoicing</p>
+                    <p>Integration
+Flask, HTTP APIs</p>
+                </div>
+            </article>
+            <article class="card" data-tags="python ai fastapi">
+                <div class="thumb">
+                    <img src="images/work-email.jpg" alt="AI email classification" loading="lazy" decoding="async">
+                </div>
+                <div class="meta">
+                    <p>AI email
+Classification, assisted replies</p>
+                    <p>AI / NLP
+Python, OpenAI</p>
+                </div>
+            </article>
+            <article class="card" data-tags="python ai">
+                <div class="thumb">
+                    <img src="images/work-sentiment.jpg" alt="Social sentiment analysis" loading="lazy" decoding="async">
+                </div>
+                <div class="meta">
+                    <p>Social sentiment
+FYP NGIRI-2024-23753</p>
+                    <p>Academic / ML
+Python, NLP</p>
+                </div>
+            </article>
+        </section>
 
-    <div class="hero-figure" id="hero-figure">
-        <div class="hero-glow"></div>
-        <div class="hero-spin" id="hero-spin" aria-hidden="true">
-            <img class="is-on" src="images/rotate/rotate-00.jpg?v=8" alt="Muhammad Arham Khan">
-        </div>
-        <img class="hero-fallback" src="images/hero-rotate.webp?v=4" alt="Muhammad Arham Khan">
+        <aside class="about">
+            <div class="block">
+                <h2>[info]</h2>
+                <p>Backend and AI application engineer. Lahore / Islamabad. Open to remote work.</p>
+            </div>
+            <div class="block">
+                <h2>[about]</h2>
+                <p>Builds and ships multi-tenant Django / FastAPI platforms for healthcare and education, PostgreSQL systems, JWT auth, and LLM-assisted tooling that runs in production.</p>
+                <p>BSCS, Capital University of Science and Technology, 2024.</p>
+            </div>
+            <div class="block career">
+                <h2>[career]</h2>
+                <ul>
+                    <li>2025 - now &nbsp;Associate Software Engineer, Camden Health System</li>
+                    <li>2024 - 25 &nbsp;Python Developer, GoldBarTech</li>
+                    <li>2023 &nbsp;Eziline Software House, Arctic Solution</li>
+                    <li>2021 - 23 &nbsp;Teaching, Skills Science College</li>
+                </ul>
+            </div>
+            <div class="block">
+                <h2>[exploring]</h2>
+                <ul>
+                    <li>Multi-tenant Django systems</li>
+                    <li>FastAPI services</li>
+                    <li>LLM-assisted workflows</li>
+                    <li>PostgreSQL at scale</li>
+                </ul>
+            </div>
+            <div class="block">
+                <h2>[connect]</h2>
+                <a href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">GitHub -&gt; github.com/httparham</a>
+                <a href="Arham.pdf" target="_blank" rel="noopener noreferrer">CV -&gt; Arham Khan, PDF</a>
+                <a href="mailto:http.arham@gmail.com">Mail -&gt; http.arham@gmail.com</a>
+            </div>
+        </aside>
     </div>
 
-    <main id="main">
-        <section class="landing" id="top">
-            <div class="landing-left">
-                <p class="hello">Hello! I’m</p>
-                <h1>ARHAM<br>KHAN</h1>
-            </div>
-            <div class="landing-right">
-                <p class="hello">An</p>
-                <p class="role-line"><span>Python Engineer</span></p>
-                <p class="role-line dim">Full-Stack Developer</p>
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="about-title">
-                <h2>What <em>I</em> <span>Do</span></h2>
-            </div>
-            <div class="do-stack">
-                <article class="do-card is-open">
-                    <span class="corner" aria-hidden="true"></span>
-                    <p class="kicker">01</p>
-                    <h3>Python / Backend</h3>
-                    <p class="lead">Building APIs and enterprise platforms</p>
-                    <p>Django and FastAPI services, PostgreSQL systems, JWT auth, and production work on multi-tenant healthcare and education products.</p>
-                    <p class="kicker">Skillset &amp; tools</p>
-                    <ul class="chips">
-                        <li>Python</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>PostgreSQL</li><li>REST</li><li>Docker</li>
-                    </ul>
-                </article>
-                <article class="do-card">
-                    <span class="corner" aria-hidden="true"></span>
-                    <p class="kicker">02</p>
-                    <h3>AI Applications</h3>
-                    <p class="lead">NLP, automation, and intelligent workflows</p>
-                    <p>Email classification, sentiment analysis, and AI-assisted tooling with OpenAI APIs — used in real product work.</p>
-                    <p class="kicker">Skillset &amp; tools</p>
-                    <ul class="chips">
-                        <li>OpenAI</li><li>NLP</li><li>Hugging Face</li><li>PyTorch</li><li>TensorFlow</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="work" id="work">
-            <div class="work-head">
-                <h2>My <span>Work</span></h2>
-            </div>
-            <div class="work-pin">
-                <div class="work-track" id="work-track">
-                    <article class="work-card">
-                        <div class="work-copy">
-                            <div class="work-title">
-                                <p class="kicker">01</p>
-                                <div>
-                                    <h3>LMS / CMS</h3>
-                                    <p class="lead">Education / Full-stack</p>
-                                </div>
-                            </div>
-                            <p>Student lifecycle, exams, fee challans, assignments, e-library, and a student portal.</p>
-                            <p class="tools">Python · Django · PostgreSQL · REST</p>
-                        </div>
-                        <div class="work-shot">
-                            <img src="images/work-lms.jpg" alt="LMS dashboard interface">
-                        </div>
-                    </article>
-                    <article class="work-card">
-                        <div class="work-copy">
-                            <div class="work-title">
-                                <p class="kicker">02</p>
-                                <div>
-                                    <h3>HIMS backend</h3>
-                                    <p class="lead">Healthcare / Backend</p>
-                                </div>
-                            </div>
-                            <p>Multi-tenant hospital platform used across 100+ hospitals — pharmacy, clinical, inventory, finance, HR.</p>
-                            <p class="tools">Django REST · PostgreSQL · JWT · Docker</p>
-                        </div>
-                        <div class="work-shot">
-                            <img src="images/work-hims.jpg" alt="Hospital information system dashboard">
-                        </div>
-                    </article>
-                    <article class="work-card">
-                        <div class="work-copy">
-                            <div class="work-title">
-                                <p class="kicker">03</p>
-                                <div>
-                                    <h3>FBR / PRAL bridge</h3>
-                                    <p class="lead">Integration</p>
-                                </div>
-                            </div>
-                            <p>Healthcare billing connected to FBR/PRAL through a Flask local-to-cloud bridge.</p>
-                            <p class="tools">Flask · Python · HTTP APIs</p>
-                        </div>
-                        <div class="work-shot">
-                            <img src="images/work-fbr.jpg" alt="Invoicing interface">
-                        </div>
-                    </article>
-                    <article class="work-card">
-                        <div class="work-copy">
-                            <div class="work-title">
-                                <p class="kicker">04</p>
-                                <div>
-                                    <h3>AI email</h3>
-                                    <p class="lead">AI / NLP</p>
-                                </div>
-                            </div>
-                            <p>Classification and assisted replies using Python, OpenAI APIs, and NLP.</p>
-                            <p class="tools">Python · OpenAI · NLP</p>
-                        </div>
-                        <div class="work-shot">
-                            <img src="images/work-email.jpg" alt="AI email interface">
-                        </div>
-                    </article>
-                    <article class="work-card">
-                        <div class="work-copy">
-                            <div class="work-title">
-                                <p class="kicker">05</p>
-                                <div>
-                                    <h3>Social Sentiment</h3>
-                                    <p class="lead">Academic / ML</p>
-                                </div>
-                            </div>
-                            <p>Final-year project NGIRI-2024-23753. Sentiment analysis with machine learning.</p>
-                            <p class="tools">Python · ML · NLP</p>
-                        </div>
-                        <div class="work-shot">
-                            <img src="images/work-sentiment.jpg" alt="Sentiment analysis dashboard">
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="career" id="career">
-            <h2>Career</h2>
-            <ol class="career-list">
-                <li>
-                    <p class="kicker">2025 — Present</p>
-                    <div>
-                        <h3>Associate Software Engineer</h3>
-                        <p class="lead">Camden Health System</p>
-                        <p>Backend APIs for multi-tenant healthcare and education platforms. HIMS, LMS, FBR invoicing, chat APIs.</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="kicker">2024 — 2025</p>
-                    <div>
-                        <h3>Python Developer</h3>
-                        <p class="lead">GoldBarTech Pvt Ltd</p>
-                        <p>Backend services, automation tools, and data-processing workflows.</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="kicker">2023</p>
-                    <div>
-                        <h3>Intern · Eziline Software House</h3>
-                        <p>Frontend and web development with Angular and Nuxt.js.</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="kicker">2023</p>
-                    <div>
-                        <h3>Web Developer · Arctic Solution Ltd</h3>
-                        <p>Client-facing sites and applications.</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="kicker">2021 — 2023</p>
-                    <div>
-                        <h3>Teacher · Skills Science College · Web Developer · Mak Traders</h3>
-                    </div>
-                </li>
-            </ol>
-        </section>
-
-        <section class="stack" id="stack">
-            <div class="stack-glow" aria-hidden="true"></div>
-            <h2>Tech Stack</h2>
-            <div class="stack-pyramid">
-                <div class="stack-row">
-                    <a class="stack-item" href="https://python.org" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
-                        <span>Python</span>
-                    </a>
-                    <a class="stack-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
-                        <span>JavaScript</span>
-                    </a>
-                    <a class="stack-item" href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="">
-                        <span>TypeScript</span>
-                    </a>
-                    <a class="stack-item" href="https://react.dev" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">
-                        <span>React</span>
-                    </a>
-                    <a class="stack-item" href="https://angular.dev" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="">
-                        <span>Angular</span>
-                    </a>
-                    <a class="stack-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
-                        <span>HTML</span>
-                    </a>
-                </div>
-                <div class="stack-row">
-                    <a class="stack-item" href="https://www.djangoproject.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="">
-                        <span>Django</span>
-                    </a>
-                    <a class="stack-item" href="https://fastapi.tiangolo.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="">
-                        <span>FastAPI</span>
-                    </a>
-                    <a class="stack-item" href="https://flask.palletsprojects.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="">
-                        <span>Flask</span>
-                    </a>
-                    <a class="stack-item" href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">
-                        <span>PostgreSQL</span>
-                    </a>
-                    <a class="stack-item" href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
-                        <span>MongoDB</span>
-                    </a>
-                </div>
-                <div class="stack-row">
-                    <a class="stack-item" href="https://redis.io" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="">
-                        <span>Redis</span>
-                    </a>
-                    <a class="stack-item" href="https://www.docker.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">
-                        <span>Docker</span>
-                    </a>
-                    <a class="stack-item" href="https://www.linux.org" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">
-                        <span>Linux</span>
-                    </a>
-                    <a class="stack-item" href="https://nginx.org" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="">
-                        <span>NGINX</span>
-                    </a>
-                </div>
-                <div class="stack-row">
-                    <a class="stack-item" href="https://openai.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.simpleicons.org/openai/ffffff" alt="">
-                        <span>OpenAI</span>
-                    </a>
-                    <a class="stack-item" href="https://huggingface.co" target="_blank" rel="noopener noreferrer">
-                        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="">
-                        <span>Hugging Face</span>
-                    </a>
-                    <a class="stack-item" href="https://pytorch.org" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="">
-                        <span>PyTorch</span>
-                    </a>
-                </div>
-                <div class="stack-row">
-                    <a class="stack-item" href="https://git-scm.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
-                        <span>Git</span>
-                    </a>
-                    <a class="stack-item" href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <p class="hello">Let’s work together</p>
-            <a class="contact-line" href="https://github.com/httparham" target="_blank" rel="noopener noreferrer">github.com/httparham</a>
-            <p class="muted">Lahore / Islamabad · BSCS CUST 2024</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© <span id="year"></span> Muhammad Arham Khan</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="script.js?v=16"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <script type="module" src="js/main.js?v=31"></script>
 </body>
 </html>
